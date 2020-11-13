@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville');
+body {
+    margin: 0;
+    background-image: url(https://html5book.ru/wp-content/uploads/2017/03/dulcineia-dias-195000.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, .8));
+}
+
+nav {
+    text-align: center;
+    padding: 40px 0 0;
+    padding-bottom: 10px;
+}
+
+header {
+    border: 3px solid #2a6be4;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    color: #222;
+    border: 7px solid #2a6be4;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.topmenu>li {
+    display: inline-block;
+    position: relative;
+    padding: 5px 5px 5px 5px;
+}
+
+.topmenu>li>a {
+    position: relative;
+    padding: 10px 15px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.5em;
+    line-height: 1;
+    letter-spacing: 3px;
+}
+
+.topmenu>li>a:before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 100%;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    transform: translate(-50%, 20px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.topmenu li:hover a:before {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    background: black;
+    color: white;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 100%;
+    width: 150px;
+    padding: 15px 0 15px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+}
+
+.topmenu>li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.submenu a {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    transition: .3s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.intro_inner {
+    display: flex;
+    padding-top: 6.6rem;
+    padding-bottom: 8rem;
+    padding-right: 0;
+    position: relative;
+    border-bottom: 1px solid black
+}
+
+.intro_subtitle {
+    color: var(--black);
+    font-weight: 200;
+    font-size: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 1px;
+    margin-top: 0;
+}
+
+.intro_title {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+
+.intro_text {
+    color: var(--black);
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.social {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+}
+
+.social_link {
+    margin-right: 0.75rem;
+    text-decoration: none;
+}
+
+.social_link:hover {
+    transform: translateY(-5px);
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+.intro_photo {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+    z-index: 1;
+    margin-bottom: 5rem;
+    margin-right: 3rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 0;
+    margin: 0 auto;
+}
+
+.my_group {
+    display: flex;
+    position: relative;
+    padding: 2px 1em 0 1em;
+}
+
+.name_my_group {
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1em 1rem 1em;
+    position: relative;
+}
+
+figure.img {
+    margin: 0;
+    text-align: center;
+    position: relative;
+}
+
+figcaption {
+    text-align: center;
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    header {
+        /* Меняем оси шапки, делая её вертикальной. */
+        flex-direction: column;
+        /* Выравнивание элементов шапки с начала (по левому краю). */
+        align-items: flex-start;
+    }
+}
+
+figure {
+    display: inline-block;
+    /* Выстраиваем по горизонтали */
+    background: #0176e4;
+    /* Цвет фона */
+    padding: 10px;
+    /* Поля */
+    margin: 4px 1rem 1em 1em;
+    /* Отступ справа */
+    vertical-align: top;
+    /* Выравниваем по верхнему краю */
+    position: relative;
+    border-radius: 15px;
+}
+
+figcaption {
+    position: relative;
+    text-align: center;
+    /* Выравниваем по центру */
+    font-size: 2rem;
+}
+
+figure.right figcaption {
+    float: right;
+    /* Добавляем текст справа */
+    padding: 5px;
+    /* Поля вокруг текста */
+}
+
+.group {
+    text-align: center;
+}
+
+.img_students {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.img_diploma {
+    height: 400px;
+    width: 300px;
+}
+
+.video_y {
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-right: 2rem;
+    margin-left: 3rem;
+    text-align: center;
+    /* Выравниваем по центру */
+    font-size: 2rem;
+}
+
+iframe {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.news article {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px 15px 7px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.news article img {
+    width: 340px;
+    height: 225px;
+    margin-right: 55px;
+}
+
+.news article .description {
+    color: #511a99;
+    font-size: 16px;
+    width: 760px;
+}
+
+.news article:nth-child(even) img {
+    order: 1;
+    margin-right: 0;
+    margin-left: 55px;
+}
+
+@media (max-width: 1200px) {
+    .news article img {
+        flex-shrink: 1;
+    }
+    .news article .description {
+        flex-shrink: 2;
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .cards .card {
+        margin-bottom: 80px;
+    }
+    .intro {
+        margin-top: -5rem;
+    }
+    .intro_photo {
+        width: 100%;
+        position: relative;
+    }
+    .intro_inner {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding: 5rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .news article {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 40px 60px;
+        margin: 0 24px 70px;
+    }
+    .news article img {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        margin-right: 0;
+    }
+    .news article .description {
+        font-size: 25px;
+    }
+    .news article:nth-child(even) img {
+        order: 0;
+        margin-left: 0;
+    }
+    .slier_img_stud {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+    }
+    .intro_photo {
+        display: inline;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+}
+
+
+/*Slick слайдер*/
+
+.slider {
+    width: 60%;
+    margin: 10px auto;
+}
+
+.slick-next:before {
+    padding-left: 15px;
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(23, 115, 219);
+    -webkit-font-smoothing: antialiased;
+}
+
+.slick-prev:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 1;
+    opacity: .75;
+    color: rgb(23, 115, 219);
+    -webkit-font-smoothing: antialiased;
+}
+
+.slider {
+    padding-left: 20px;
+}
