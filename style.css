@@ -8,6 +8,7 @@ body {
     height: 100%;
     width: 100%;
     position: relative;
+    overflow-x:  hidden;
 }
 
 body:before {
@@ -191,10 +192,11 @@ h6 {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     padding-left: 1rem;
     padding-right: 0;
     margin: 0 auto;
+    overflow:  hidden;
 }
 
 .my_group {
@@ -203,7 +205,7 @@ h6 {
     padding: 2px 1em 0 1em;
 }
 
-.name_my_group {
+.name_title {
     align-items: center;
     text-align: center;
     padding: 1rem 1em 1rem 1em;
@@ -305,8 +307,8 @@ iframe {
 }
 
 .news article .description {
-    color: #511a99;
-    font-size: 16px;
+    color: #0759a5;
+    font-size: 20px;
     width: 760px;
 }
 
@@ -315,6 +317,19 @@ iframe {
     margin-right: 0;
     margin-left: 55px;
 }
+
+
+table {
+    width: auto; /* Ширина таблицы */
+    border: 1px solid rgb(16, 89, 138); /* Рамка вокруг таблицы */
+    margin: auto; /* Выравниваем таблицу по центру окна  */
+    position: relative;
+    padding-top: 10px;
+   }
+   td,th{
+    text-align: center; /* Выравниваем текст по центру ячейки */
+    border-bottom: 1px solid rgb(18, 67, 201);
+   }
 
 @media (max-width: 1200px) {
     .news article img {
