@@ -595,7 +595,7 @@ table.table-1 th {
 .download_presentation {
     border: 1px solid #333;
     /* Рамка */
-    display: inline-block;
+    display: flex;
     padding: 5px 15px;
     padding-left: 15px;
     /* Поля */
@@ -613,4 +613,23 @@ table.table-1 th {
     background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
     /* Градиент */
     color: #a00;
+}
+
+.main-block {
+    width: 100%;
+    max-width: 700px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    /* Ставит дочерние элементы по центру по горизонтали */
+    align-items: center;
+    /* Ставит дочерние элементы по центру по вертикали */
+    background: white;
+}
+
+.main-block__link {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #252525;
+    text-decoration: none;
 }
