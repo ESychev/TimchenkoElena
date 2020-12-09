@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html itemscope itemtype="http://schema.org/Product" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/html">
+
 
 <head>
     <meta charset="UTF-8" />
@@ -7,6 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Персональный блог куратора Тимченко Елены Геннадьевны</title>
     <link rel="stylesheet" href="./style.css" />
+    <style>
+        * {
+            position: relative;
+            background: none;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,6 +53,7 @@
                         <li>
                             <a href="./students_rzs9.html">Группа РЗС-9</a>
                         </li>
+                        <li><a href="./students_rzs10.html">Группа РЗС-10</a></li>
                         <li><a href="./students_rzs11.html">Группа РЗС-11</a></li>
                         <li><a href="./students_rzs12.html">Группа РЗС-12</a></li>
                     </ul>
@@ -67,93 +76,27 @@
                 </li>
                 <li><a href="./parents.html">Родителям</a></li>
                 <li><a href="./teachers.html">Куратору</a></li>
-                <li><a href="./distance_learning.html">Дистанционная площадка</a></li>
+                <li><a href="./teachers.html">Дистанционная площадка</a></li>
             </ul>
         </nav>
     </header>
-
-    <h2 class="name_title">Расписание звонков</h2>
-    <div class="table-wrap">
-        <table class="table-1">
-            <tr>
-                <th colspan="3">Расписание звонков</th>
-                <th>Переменка</th>
-            </tr>
-            <tr>
-                <td>№ урока</td>
-                <td>Звонок на урок</td>
-                <td>Звонок с урока</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>0</td>
-                <td>8:00</td>
-                <td>8:45</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>8:45</td>
-                <td>9:30</td>
-                <td>10 мин</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>9:40</td>
-                <td>10:25</td>
-                <td>10 мин</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>10:35</td>
-                <td>11:20</td>
-                <td>10 мин</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>11:30</td>
-                <td>12:15</td>
-                <td>20 мин</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>12:35</td>
-                <td>13:20</td>
-                <td>10 мин</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>13:30</td>
-                <td>14:15</td>
-                <td>10 мин</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>14:25</td>
-                <td>15:10</td>
-                <td>10 мин</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>15:20</td>
-                <td>16:05</td>
-                <td>10 мин</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>16:15</td>
-                <td>17:00</td>
-                <td>10 мин</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>17:10</td>
-                <td>17:55</td>
-                <td></td>
-            </tr>
-        </table>
-    </div>
-    <br />
+    <h2 class="name_title">Онлайн платформа для дистанционного обучения </h2>
+    <a href="https://hoster.by/upload/peregovorka_by(3).pdf" target="_blank" class="download_presentation">Подробное описание сервиса и инструкцию к нему вы можете найти здесь
+      </a>
+    </script>
+    <script src="https://peregovorka.by/external_api.js"></script>
+    <script>
+        var domain = "peregovorka.by";
+        var options = {
+            roomName: "TimchenkoElenaOnlinePlatform",
+            width: 990,
+            height: 900,
+            // margin: auto,
+            parentNode: undefined,
+        };
+        var api = new JitsiMeetExternalAPI(domain, options);
+    </script>
 </body>
+<!-- <a href="https://ru.freepik.com/vectors/background">Background вектор создан(а) freepik - ru.freepik.com</a> -->
 
 </html>
